@@ -29,8 +29,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server": "nodemon /backend/server.js",
-    "start": "node /backend/server.js",
+    "server": "nodemon backend/server.js",
+    "start": "node backend/server.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "eslintConfig": {
@@ -53,7 +53,7 @@
   },
   "type": "module",
   "description": "",
-  "main": "backend/server.js",
+  "main": "server.js",
   "keywords": [],
   "author": "",
   "license": "ISC"
