@@ -40,7 +40,7 @@ server.use("/api/posts", postRouter);
 server.use("/api/comments", jwtAuth, commentRouter);
 server.use("/api/likes", jwtAuth, likesRouter);
 
-server.use(express.static(path.join(__dirname, "../frontend/build")));
+server.use(express.static(path.join(__dirname, "/frontend/build")));
 
 server.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
